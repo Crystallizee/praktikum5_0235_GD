@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DepartmentController;
+use App\http\controllers\PegawaiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,6 @@ Route::get('/departemen',[DepartmentController::class,'index']);
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/pegawai', [PegawaiController::class, 'index']); 
+
+    
